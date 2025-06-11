@@ -1,0 +1,20 @@
+<div>
+  <h2>{{ section.settings.title }}</h2>
+  <p>The new {{ collection.title | downcase }} is out now!</p>
+  <p>{{ section.settings.extraInfo }}</p>
+</div>
+
+{% schema %}
+  {
+    "name": "Call to action",
+    "settings": [{
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },{
+      "type": "textarea",
+      "id": "extraInfo",
+      "label": "Text"
+    }]
+  }
+{% endschema %}
