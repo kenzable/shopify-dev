@@ -30,7 +30,6 @@
           "type": "collapsible_row"
         }
       },
-      "name": "t:sections.collapsible_content.presets.name",
       "settings": {
         "caption": "",
         "color_scheme": "",
@@ -48,7 +47,6 @@
       "type": "collapsible-content"
     },
     "contact_form_Pbte6c": {
-      "name": "t:sections.contact-form.presets.name",
       "settings": {
         "color_scheme": "",
         "heading": "Contact form",
@@ -87,8 +85,12 @@
       "type": "featured-collection"
     },
     "gp_shopify_original_section_569617789837378712": {
+      "name": "Big boi banner",
       "settings": {
         "checksum": "",
+        "ggARIIlI2Mm_text": "Our tops are crafted from luxurious silk, offering a breathable and lightweight feel perfect for summer. The natural sheen and smooth texture provide a sophisticated look, making it a must-have for any wardrobe.",
+        "ggHhXbYibmP_label": "Shop organic products",
+        "ggIiIYW7yJC_text": "This is a big-ass hero banner on my page",
         "section_preload": "true"
       },
       "type": "gp-section-569617789837378712"

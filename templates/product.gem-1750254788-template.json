@@ -54,7 +54,7 @@
           "settings": {
             "heading": "Model info",
             "icon": "silhouette",
-            "content": "<p>{{ product.metafields.models.model_info.value.name.value }} is {{ product.metafields.models.model_info.value.height | metafield_tag }} and is wearing size {{ product.metafields.model.wearing_size.value }}. </p><p>{{ product.metafields.models.model_info.value.name.value }}'s measurements:</p><ul><li>{{ product.metafields.models.model_info.value.bust | metafield_tag }}</li><li>{{ product.metafields.models.model_info.value.waist | metafield_tag }}</li><li>{{ product.metafields.models.model_info.value.hips | metafield_tag }}</li></ul>",
+            "content": "<p>{{ product.metafields.models.model_info.value.name.value }} is {{ product.metafields.models.model_info.value.height | metafield_tag }} and is wearing size {{ product.metafields.model.wearing_size.value }}. <\/p><p>{{ product.metafields.models.model_info.value.name.value }}'s measurements:<\/p><ul><li>{{ product.metafields.models.model_info.value.bust | metafield_tag }}<\/li><li>{{ product.metafields.models.model_info.value.waist | metafield_tag }}<\/li><li>{{ product.metafields.models.model_info.value.hips | metafield_tag }}<\/li><\/ul>",
             "page": ""
           }
         },
