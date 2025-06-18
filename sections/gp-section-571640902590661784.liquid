@@ -23,47 +23,21 @@
     {%- assign gpBkProduct = product -%}
     
         {%- liquid
-          if request.page_type == 'product'
-            if 'static' == 'static'
-              if '7374201356401' == 'latest'
-                paginate collections.all.products by 100000
-                  assign product = collections.all.products | sort: 'created_at' | reverse | first
-                endpaginate
-              else
-                assign product = all_products['striped-skirt-and-top']
-                assign productId = '7374201356401' | times: 1
-                if product == empty or product == null
-                  paginate collections.all.products by 100000
-                    for item in collections.all.products
-                      if item.id == productId
-                        assign product = item
-                      endif
-                    endfor
-                  endpaginate
-                endif
-              endif
-            endif
-          else
-            if '7374201356401' == 'latest'
+          if request.page_type != 'product'
+            assign product = all_products['blue-silk-tuxedo']
+            assign productId = '7374201290865' | times: 1
+            if product == empty or product == null
               paginate collections.all.products by 100000
-                assign product = collections.all.products | sort: 'created_at'| reverse | first
+                for item in collections.all.products
+                  if item.id == productId
+                    assign product = item
+                  endif
+                endfor
               endpaginate
-            else
-              assign product = all_products['striped-skirt-and-top']
-              assign productId = '7374201356401' | times: 1
-              if product == empty or product == null
-                paginate collections.all.products by 100000
-                  for item in collections.all.products
-                    if item.id == productId
-                      assign product = item
-                    endif
-                  endfor
-                endpaginate
-              endif
             endif
           endif
         -%}
-      
+        
 
     {%-if product != empty and product != null -%}
       {%- assign initVariantId =  -%}
